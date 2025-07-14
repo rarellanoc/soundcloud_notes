@@ -24,7 +24,7 @@ def convert_pbt_to_srt(input_path, output_path=None, read_time=2.0, separator=',
         start_srt = seconds_to_srt_timestamp(start_sec)
         end_srt = seconds_to_srt_timestamp(end_sec)
 
-        srt_entries.append(f"{idx}\n{start_srt} --> {end_srt}\n{text.strip()}\n")
+        srt_entries.append(f"{idx}\n{start_srt} --> {end_srt}\n{text.strip()}\n\n")
 
     with open(output_path, 'w', encoding='utf-8') as outfile:
         outfile.writelines(srt_entries)
