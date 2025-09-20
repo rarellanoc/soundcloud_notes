@@ -20,4 +20,4 @@ then your second watch has all the comments as subtitles.
 
 I recently added the possibility to use two different bookmark sources, like a 'conversation' of two people in one file:
 
->potplayer_pbt_dual_to_srt.py input1.pbt input2.pbt output.srt 
+>python3 potplayer_pbt_dual_to_srt.py input1.pbt input2.pbt output.srt 
